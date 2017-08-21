@@ -1,5 +1,13 @@
 What happens when you initialize a repository? Why do you need to do it?
 It creates a .git file in the current directory. You need to do it so git can commit the files in the directory and start tracking them.
 
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+It contains the files in the working directory that you have added to it because you want to track them before you have actually commited them to the repository to be tracked. If you change your mind and you haven't commited the file yet or you don't want to make a commit yet, you can remove it from the staging area.
+
+How can you use the staging area to make sure you have one commit per logical change?
+If you run git diff and/or git diff --staged you can see the differences between the working directory and what is in the staging area and the differences between what is in the staging area and the most recent commit.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+Branches will help when you want to try something out as either a variation or possible improvement. They will help because they will not effect the master branch.
 
 
